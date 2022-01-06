@@ -1,4 +1,4 @@
-# Week 2: A Simple CLI
+# Week 2: A Simple Line Counter
 
 Let’s build a very simple application to start. You will write an application that takes in a single filename or “-” (stdin). It will read in the file, then output the number of lines, and other various metrics related to the file’s line count.
 

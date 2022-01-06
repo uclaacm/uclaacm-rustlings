@@ -1,4 +1,4 @@
-# Week 3: External Dependencies
+# Week 3: Working with External Dependencies
 
 Now that we’ve grown at least a little accustomed to Rust’s syntax, let’s get familiar with its
 ecosystem of packages. The Rust standard library is known for being “to-the-point” compared to

@@ -16,6 +16,8 @@ We will learn how to:
 1. Install rustup by following the instructions given here: https://rustup.rs/
 2. Install the latest stable version of Rust as the installation toolchain walks you through it.
 
+More information is available [here](https://doc.rust-lang.org/book/ch01-01-installation.html).
+
 ## Creating a New Project
 
 First, create a new project for your application with the command `cargo new NAME_OF_MY_PROJECT`.
@@ -24,7 +26,9 @@ command **relative to your current working directory**. This means that if you r
 the directory `/home/me`, it would be created as `/home/me/NAME_OF_MY_PROJECT`. This might end up
 being a place that's difficult to reach with your graphical file browser -- be careful!
 
-If you 
+Alternatively, you can initialize an existing folder or git repository with `cargo init .`.
+
+More information is available [here](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html).
 
 ## What's in a Rust Project?
 
@@ -56,12 +60,15 @@ edition = "2021"
 ```
 
 This is our package manifest, containing all of the important information about what our package is and what it does.
+Later on, this file will contain important information like which packages `myproject` depends on.
 
-...
+The file `myproject/src/main.rs` is the entry point of the program. By default, this currently contains only
 
-## Writing our Code
-
-...
+```rust
+fn main() {
+    println!("Hello, world!");
+}
+```
 
 ## Running our Code
 
@@ -78,18 +85,16 @@ Hello, world!
 ```
 
 Depending on which operating system you're using, your output might vary a bit, but the important part is the "Hello, world!".
-We have now run a Rust program!
-
-## Building our Code
-
-When we run `cargo run`, we produce a debug build of our software, meaning there's a lot of optimizations that were forewent
-in the name of getting something working fast. Further, debug symbols are included. To build our program, we can just run
-`cargo build`:
-
-```
-...
-```
+We now have a running Rust program!
 
 ## Learning Rust
 
 The most valuable resource for learning Rust is [The Book](https://doc.rust-lang.org/stable/book/).
+
+This [resource](https://fasterthanli.me/articles/a-half-hour-to-learn-rust) exists if you want to speedrun Rust syntax in 30 minutes.
+
+A good way to familiarize yourself with Rust syntax is by looking at [Rust by Example](https://doc.rust-lang.org/rust-by-example/).
+
+## Your Task
+* Open a pre-designated file (eg., `example.txt`) and count lines in it
+* Print out the number of lines

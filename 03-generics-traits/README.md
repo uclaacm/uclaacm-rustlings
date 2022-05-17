@@ -1,3 +1,0 @@
-# Week 3: Generics and Traits
-
-...

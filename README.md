@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) ![Creative Commons Attribution 4.0 International License logo](https://i.creativecommons.org/l/by/4.0/80x15.png)
 
-A collection of learning resources for Rust beginners as taught through the creation of a
+A collection of learning resources for Rust beginners, taught through the creation of a
 line-counting toy project!
 
 ## Abstract
@@ -20,11 +20,11 @@ to get a feel for what you’ll be making:
 ## Table of Contents
 
 * Week 1: The Rust Toolchain
-* Week 2: A Simple Line Counter
+* Week 2: A Simple CLI Line Counter
 * Week 3: Working with External Dependencies
 * Week 4: Parallelizing Line Counting
-* Week 5: Advanced Topics; Async Rust
-* Week 6: Advanced Topics; Integrating Rust and C/C++
+* Week 5: Generics and Traits
+* Week 6: Integrating Rust and C/C++
 
 ## Goals
 
@@ -32,9 +32,8 @@ You will learn:
 * Basics of Rust syntax
 * Rust’s toolchain
 * How to work with strings
-* `std::fs`
-* `std::fmt`
-* `std::thread`
+* How to interact with the filesystem
+* How to work with multiple threads to parallelize your code
 
 You should already know:
 * Another programming language

@@ -42,6 +42,12 @@ You should already know:
 Lecture material (or at least additional resources for) the information required to create this project will be
 provided in each part.
 
+## Companion Repository
+
+You should use the [companion repository](https://github.com/uclaacm/rustlings-toy-project) as a template and
+starting point for your code for the toy line counting project. It contains test cases to help validate
+the correctness of your code after each week.
+
 ## Licensing and Attribution
 
 Notes in this repository are published with the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).

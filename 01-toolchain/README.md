@@ -96,7 +96,7 @@ This [resource](https://fasterthanli.me/articles/a-half-hour-to-learn-rust) exis
 A good way to familiarize yourself with Rust syntax is by looking at [Rust by Example](https://doc.rust-lang.org/rust-by-example/).
 
 ## Your Task
-* Open a pre-designated file (eg., `example.txt`) and count lines in it
+* Open the pre-designated file `example.txt` and count lines in it
 * Print out the number of lines
 
 Take a look at the following resources to help you get started with this project:

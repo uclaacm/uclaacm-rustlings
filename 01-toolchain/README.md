@@ -98,3 +98,11 @@ A good way to familiarize yourself with Rust syntax is by looking at [Rust by Ex
 ## Your Task
 * Open a pre-designated file (eg., `example.txt`) and count lines in it
 * Print out the number of lines
+
+Take a look at the following resources to help you get started with this project:
+
+* Rust by Example [page](https://doc.rust-lang.org/rust-by-example/std_misc/file/open.html) on opening files for reading.
+* Rust by Example [page](https://doc.rust-lang.org/rust-by-example/std_misc/file/read_lines.html) on reading lines in a file.
+
+Don't worry if you don't know exactly what is going on in each line of Rust code. The goal is for you to have the chance to
+play around with some Rust code and get familiar with the syntax.

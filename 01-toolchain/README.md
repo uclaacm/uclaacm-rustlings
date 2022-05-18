@@ -87,17 +87,18 @@ Hello, world!
 Depending on which operating system you're using, your output might vary a bit, but the important part is the "Hello, world!".
 We now have a running Rust program!
 
-## Learning Rust
+## Binary vs Library
 
-The most valuable resource for learning Rust is [The Book](https://doc.rust-lang.org/stable/book/).
-
-This [resource](https://fasterthanli.me/articles/a-half-hour-to-learn-rust) exists if you want to speedrun Rust syntax in 30 minutes.
-
-A good way to familiarize yourself with Rust syntax is by looking at [Rust by Example](https://doc.rust-lang.org/rust-by-example/).
+Rust has a distinction between a library and binary crate. A binary can be run directly, and it is often used as the
+command-line interface (CLI) application. A library typically contains a reusable set of data types and functions.
+That other binaries or libraries can depend on. In a single Rust project, a library and a binary can coexist to
+help with organizing the codebase.
 
 ## Your Task
-* Open the pre-designated file `example.txt` and count lines in it
-* Print out the number of lines
+
+* Open the pre-designated file `example.txt` and print out each line in the file
+
+You can start with the template provided by the [companion repository](https://github.com/uclaacm/rustlings-toy-project), which also has test cases for each week.
 
 Take a look at the following resources to help you get started with this project:
 
@@ -106,3 +107,11 @@ Take a look at the following resources to help you get started with this project
 
 Don't worry if you don't know exactly what is going on in each line of Rust code. The goal is for you to have the chance to
 play around with some Rust code and get familiar with the syntax.
+
+## Learning Rust
+
+The most valuable resource for learning Rust is [The Book](https://doc.rust-lang.org/stable/book/).
+
+This [resource](https://fasterthanli.me/articles/a-half-hour-to-learn-rust) exists if you want to speedrun Rust syntax in 30 minutes.
+
+A good way to familiarize yourself with Rust syntax is by looking at [Rust by Example](https://doc.rust-lang.org/rust-by-example/).

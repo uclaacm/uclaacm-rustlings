@@ -39,8 +39,8 @@ You should already know:
 * Another programming language
 * How to navigate and use your computer with a terminal
 
-Lecture material (or at least additional resources for) the information required to create this project will be
-provided in each part.
+Note that the point of this repository is to focus on learning by doing. Expect to play with the code, ask lots of questions, and
+carefully read linked resources!
 
 ## Companion Repository
 

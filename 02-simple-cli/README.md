@@ -1,39 +1,23 @@
 # Week 2: A Simple CLI Line Counter
 
-Now that we’ve grown at least a little accustomed to Rust’s syntax, let’s get familiar with its
-ecosystem of packages. The Rust standard library is known for being “to-the-point” compared to
-languages like Go or Python, but that’s not a bad thing. There are many high-quality
-community-maintained packages (called “crates”) that can do almost anything under the sun for
-you. For our application, we will investigate the `clap` crate for argument parsing.
+This week's lesson is centered around building a simple application that takes input from the command-line.
+In summary, you will write an application that takes in a single filename or "-" (stdin).
+It will read in the file, then output the number of lines in the file.
 
-We will:
-* Use dependencies from crates.io
-* Parse args
-* Read a file line by line, or as an entire string
-* Use attribute macros for CLI options
-* Basic introduction to macros
-* Option to aggregate lines across all files or distinguish file types
-* Use a hash table to keep track of different file types
-* Test our code
+We will learn:
+* Reading a file line-by-line in Rust
+* Parsing command-line arguments using `std::env`
 
-## Requirements
+## Your Task
 
-* Your program should compile safely using the 2021 edition of Rust.
-* If an unexpected error occurs, the program should panic with a helpful message (don’t use `unwrap()`).
-* On success, the program should exit with a status code of 0.
-* The program should provide useful help output when run with `--help`.
-* If run WITH the `-A` option, the program’s output should be exactly as follows for each filename extension (one string per line, with a trailing newline):
+* Create a program that takes in a single filename or "-" (for stdin) as the command-line argument. (Note: don't use any external crates, use `std::env`).
+* The program should read the file (or stdin), counting the number of lines.
+* The program should print a line with a single number, the total number of lines in the file.
+* Print descriptive error messages! Don't just use `unwrap()`, but instead `expect()`.
 
-```
-There are N lines of code in [EXTNAME] files.
-There are N empty lines in [EXTNAME] files.
-NN.NN% of the lines in [EXTNAME] files are empty.
-```
-
-* If run WITHOUT the -A option, the program’s output should be exactly as follows (one string per line, with a trailing newline):
-
-```
-There are N lines of code.
-There are N empty lines.
-NN.NN% of the lines are empty.
-```
+To accomplish this task, you should take a look at the following resources:
+* [Documentation](https://doc.rust-lang.org/std/env/fn.args.html) on `std::env::args()`
+* This [blog post](https://kerkour.com/rust-read-file) on different ways of reading from a file
+* Rust by Example [page](https://doc.rust-lang.org/rust-by-example/std_misc/file/open.html) on opening a file
+* This [documentation](https://doc.rust-lang.org/std/iter/trait.Iterator.html#tymethod.next) on Rust iterators (specifically `next()` and `skip()`)
+* Documentation on [`Result`](https://doc.rust-lang.org/std/result/) and [`Option`](https://doc.rust-lang.org/std/option/), which are important types for representing errors or "nulls"

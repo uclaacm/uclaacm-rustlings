@@ -21,3 +21,4 @@ To accomplish this task, you should take a look at the following resources:
 * Rust by Example [page](https://doc.rust-lang.org/rust-by-example/std_misc/file/open.html) on opening a file
 * This [documentation](https://doc.rust-lang.org/std/iter/trait.Iterator.html#tymethod.next) on Rust iterators (specifically `next()` and `skip()`)
 * Documentation on [`Result`](https://doc.rust-lang.org/std/result/) and [`Option`](https://doc.rust-lang.org/std/option/), which are important types for representing errors or "nulls"
+* This [blog post](https://phrohdoh.com/blog/read-from-file-or-stdin-rust/) on reading either from a file or from stdin

@@ -111,6 +111,7 @@ play around with some Rust code and get familiar with the syntax.
 ## Learning Rust
 
 The most valuable resource for learning Rust is [The Book](https://doc.rust-lang.org/stable/book/).
+Specifically, take a look at the [programming concepts](https://doc.rust-lang.org/book/ch03-00-common-programming-concepts.html) to familiarize yourself with Rust syntax and idioms.
 
 This [resource](https://fasterthanli.me/articles/a-half-hour-to-learn-rust) exists if you want to speedrun Rust syntax in 30 minutes.
 

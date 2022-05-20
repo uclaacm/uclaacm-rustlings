@@ -17,6 +17,8 @@ We will learn how to:
 ## Your Task
 
 In addition to the basic line counting program from the previous weeks, the following must be supported:
+* The program should accept a single positional argument, a **directory**, and it should recursively count the lines of all the
+files in the directory.
 * Useful help message should be printed when run with `--help`.
 * Print helpful error messages
 * If run **with** the `-A` option, the program’s output should be exactly as follows for each filename extension (one string per line, with a trailing newline):
@@ -114,3 +116,4 @@ You can learn more about Rust `HashMap`s by looking at the [documentation](https
 
 Additionally, you should take a look at the following resources:
 * [Documentation](https://doc.rust-lang.org/std/fmt/index.html) on formatting strings
+* [Documentation](https://doc.rust-lang.org/std/fs/fn.read_dir.html) with example on how to recursively get all files in a directory

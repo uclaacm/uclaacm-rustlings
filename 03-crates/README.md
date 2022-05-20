@@ -41,7 +41,7 @@ Most Rust libraries (crates) that you will encounter are typically hosted on [cr
 available on [docs.rs](docs.rs). For the line counting program, we will use the popular [`clap`](https://crates.io/crates/clap) crate for command-line argument parsing.
 The corresponding documentation for this crate is available [here](https://docs.rs/clap/latest/clap/).
 
-To depend on `clap`, it is as simple as navigating to the `clap` crates.io [page](https://crates.io/crates/clap), copy and pasting one line of TOML (for example, `clap = "3.1.18"`), and pasting it in you `Cargo.toml` file under the dependencies section:
+To depend on `clap`, it is as simple as navigating to the `clap` crates.io [page](https://crates.io/crates/clap), copy one line of TOML (for example, `clap = "3.1.18"`), and pasting it into your `Cargo.toml` file under the dependencies section:
 
 ```toml
 [dependencies]
@@ -96,9 +96,10 @@ can parse CLI arguments), and `Debug` (to automatically provide a way to debug p
 Then, the `clap` attribute macro is used to tell it to encorporate author, version, and about information
 int othe CLI. This information is automatically taken from the `Cargo.toml` file.
 
-The struct itself has two fields, one for the file name, which is by default a required positional
-argument, and the fun level, which is an optional named argument. The fun level has a default value of 100.
-
+The struct itself has two fields, which will be automatically transformed into CLI arguments.
+The first field is the file name, which is by default a required positional
+argument.
+The second field is the fun level, which is an optional named argument. The fun level has a default value of 100.
 The cool thing about the macros that `clap` provides is that the doc comments (specified with `///`)
 will actually be transformed into help messages! This illustrates the power of macros. Such a short piece of code
 can generate an entire functional CLI.
